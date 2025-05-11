@@ -35,6 +35,43 @@
 
     <!-- ===== LIEN MAIN CSS ===== -->
     <link href="../assets/css/hireme.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <style>
+      .projets-section .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+      }
+      .projets-section .col-md-6 {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 16px #0001;
+        padding: 32px 16px 24px 16px;
+        margin-bottom: 24px;
+        max-width: 420px;
+        flex: 1 1 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .projets-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #0002;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 900px) {
+        .projets-section .row {
+          flex-direction: column;
+          align-items: center;
+        }
+        .projets-section .col-md-6 {
+          max-width: 95vw;
+        }
+      }
+    </style>
     <title>Projets</title>
 </head>
 <body>
